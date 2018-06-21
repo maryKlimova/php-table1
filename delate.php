@@ -6,7 +6,7 @@ if(empty($idImg)) die("error");
 $name = './img/';
 $bb=getId($idImg);
 $slice=$bb[0]['url'];
-echo $nameSlice=substr($slice,6);
+$nameSlice=substr($slice,6);
 $deleteImage =  getcwd() . $slice;
 
    if(unlink($deleteImage)){
